@@ -1,8 +1,23 @@
 <template>
   <div id="app">
-   <h3>this is visual feast!!!</h3>
+   <Header></Header>
   </div>
 </template>
+
+<script lang="ts">
+import Vue from 'vue';
+import {Component} from 'vue-property-decorator';
+import Header from '../src/components/Header.vue';
+
+  @Component({
+    components: {
+      Header,
+    },
+  })
+  export default class App extends Vue {
+
+  }
+</script>
 
 <style lang="less">
 #app {
